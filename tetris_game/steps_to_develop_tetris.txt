@@ -1,1 +1,15 @@
 Steps to develop Tetris 
+
+1. Install Pygame
+2. Setup the Game Loop
+3. Creating the Grid
+4. Create the Blocks 
+5. Move the Blocks 
+6. Rotate the Blocks 
+7. Checking for collisions 
+8. Check for completed rows 
+9. Game over 
+10. Create User Interface 
+11. Add Score 
+12. Add Next Block 
+13. Add Sounds 
