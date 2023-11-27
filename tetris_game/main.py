@@ -27,6 +27,6 @@ while True:
     # 3. Drawing Objects
     screen.fill(DARK_BLUE)
     pygame.display.update()
-    clock.tick(60) # numbers of frames per second 
+    clock.tick(60) # number of frames per second 
     # Updating the positions of the game objects 
     # Checking for collisions
