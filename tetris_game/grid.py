@@ -1,3 +1,5 @@
+import pygame
+
 class Grid:
     def __init__(self):
         self.num_rows = 20
@@ -25,3 +27,12 @@ class Grid:
         
         return [dark_grey, green, red, orange, yellow, purple, cyan, blue]
         # the order of the list is important, the index of each color will be used to draw each cell on the screen
+        # the index corresponds to the block id 
+
+    def draw(self, screen):
+        for row in range(self.num_rows):
+            for column in range(self.num_cols):
+                cell_value = self.grid[row][column]
+                cell_rect = pygame.Rect(column*self.cell_size +1, row*self.cell_size +1,
+                                        self.cell_size -1, self.cell_size -1)
+                pygame.draw.rect(screen, self.colors[cell_value], cell_rect)
