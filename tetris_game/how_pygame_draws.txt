@@ -1,0 +1,18 @@
+How pygame draws on the screen
+
+Display Surface:
+It's like a blank Canvas.
+We can only have one per game. 
+
+It's created when we call the set_mode() function and it's object:
+screen = pygame.display.set_mode((300, 600))
+
+and we used it when we call the update() function: 
+pygame.display.update()
+
+Surface:
+Another type of blank Canvas.
+We can only many surfaces per game. 
+
+Rect: 
+Rectangles are used for positioning, collision detection and for drawing objects.
