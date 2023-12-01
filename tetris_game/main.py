@@ -2,6 +2,7 @@
 # Definitions --------------------------------------------------
 import pygame, sys
 from grid import Grid
+from blocks import *
 
 pygame.init()
 
@@ -14,7 +15,8 @@ pygame.display.set_caption('Python Tetris')
 clock = pygame.time.Clock()
 
 game_grid = Grid()
-game_grid.print_grid()
+
+block = LBlock()
     # Creating the game objects 
 
 # Game Loop --------------------------------------------------
@@ -31,6 +33,8 @@ while True:
     # 3. Drawing Objects
     screen.fill(DARK_BLUE)
     game_grid.draw(screen)
+    block.draw(screen)
+
     pygame.display.update()
     clock.tick(60) # number of frames per second 
     # Updating the positions of the game objects 
