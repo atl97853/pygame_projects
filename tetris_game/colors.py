@@ -11,3 +11,5 @@ class Colors:
     @classmethod #class decorator 
     def get_cell_colors(cls):
         return [cls.dark_grey, cls.green, cls.red, cls.orange, cls.yellow, cls.purple, cls.cyan, cls.blue]
+    # the order of the list is important, the index of each color will be used to draw each cell on the screen
+    # the index corresponds to the block id 
